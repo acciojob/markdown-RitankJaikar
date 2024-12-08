@@ -11,7 +11,7 @@ export default function App() {
             </textarea>
             <div className="preview">
                 <div className="loading"></div>
-                {text}
+                <h1>{text}</h1>
             </div>
         </div>
     )
