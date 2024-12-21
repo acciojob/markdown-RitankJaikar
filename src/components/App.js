@@ -3,13 +3,15 @@ import { useState } from "react";
 import "../styles/App.css";
 
 export default function App() {
-    const [text, setText] = useState("");
-
+    let [text,Settext]=useState('')
+    function changetext(event){
+        Settext(event.target.value)
+    }
     return (
         <div className='mark1'>
             <div className='preview'>
             <h1>Heading</h1><br></br><br></br><span>This is some <strong>bold</strong> text.</span>  
-             <textarea onChange={changetext}>
+             <textarea onChange={text}>
             </textarea>   
             </div>
         </div>
