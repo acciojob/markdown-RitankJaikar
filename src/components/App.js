@@ -6,13 +6,11 @@ export default function App() {
     const [text, setText] = useState("");
 
     return (
-        <div className="app">
-            <textarea className="textarea" onChange={e => setText(e.target.value)} value={text} placeholder="Enter markdown here...">
-            </textarea>
-            <div className="preview">
-                <h1>Heading</h1><br></br><br></br><span>This is some <strong>bold</strong> text.</span>  
-                <div className="loading"></div>
-                <h1>{text}</h1>
+        <div className='mark1'>
+            <div className='preview'>
+            <h1>Heading</h1><br></br><br></br><span>This is some <strong>bold</strong> text.</span>  
+             <textarea onChange={changetext}>
+            </textarea>   
             </div>
         </div>
     )
